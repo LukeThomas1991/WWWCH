@@ -1,0 +1,518 @@
+/*
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+    .text-vertical-center h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 4.5em;
+        font-weight: 700;
+    }
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+    .btn-dark:hover,
+    .btn-dark:focus,
+    .btn-dark:active {
+        color: #fff;
+        background-color: rgba(0,0,0,0.7);
+    }
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+    .btn-light:hover,
+    .btn-light:focus,
+    .btn-light:active {
+        color: #333;
+        background-color: rgba(255,255,255,0.8);
+    }
+    
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+hr.medium {
+    max-width: 200px;
+}
+
+hr.large {
+    max-width: 300px;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .sidebar-nav li {
+        text-indent: 20px;
+        line-height: 40px;
+    }
+
+        .sidebar-nav li a {
+            display: block;
+            text-decoration: none;
+            color: #999;
+        }
+
+            .sidebar-nav li a:hover {
+                text-decoration: none;
+                color: #fff;
+                background: rgba(255,255,255,0.2);
+            }
+
+            .sidebar-nav li a:active,
+            .sidebar-nav li a:focus {
+                text-decoration: none;
+            }
+
+    .sidebar-nav > .sidebar-brand {
+        height: 55px;
+        font-size: 18px;
+        line-height: 55px;
+    }
+
+        .sidebar-nav > .sidebar-brand a {
+            color: #999;
+        }
+
+            .sidebar-nav > .sidebar-brand a:hover {
+                color: #fff;
+                background: none;
+            }
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg.JPG) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* About */
+
+.about {
+    padding: 50px 0;
+}
+
+/* Car History */
+
+.carhistory {
+    padding: 50px 0;
+}
+
+/* Viewing */
+.viewing {
+    padding: 50px 0;
+}
+
+.viewing a {
+    color: lightgray;
+}
+
+
+/* Gallery */
+
+.gallery {
+    padding: 50px 0;
+}
+
+/* Video */
+
+.video {
+    padding: 50px 0 0 0;
+}
+
+/* Map */
+
+.map {
+    height: 300px;
+}
+
+/* Contact */
+
+.contact {
+    padding: 50px 0;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color:lightgray;
+    padding: 70px 0;
+}
+
+section#contact .form-group {
+    margin-bottom: 25px;
+}
+
+    section#contact .form-group input,
+    section#contact .form-group textarea {
+        padding: 20px;
+    }
+
+        section#contact .form-group input.form-control {
+            height: auto;
+        }
+
+        section#contact .form-group textarea.form-control {
+            height: 236px;
+        }
+
+section#contact .form-control:focus {
+    border-color: #337ab7;
+    box-shadow: none;
+}
+
+section#contact::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact::-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact .text-danger {
+    color: #e74c3c;
+}
+
+.navbar-default {
+    border-color: transparent;
+    background-color: #222;
+}
+
+    .navbar-default .navbar-brand {
+        font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+        color: #fff;
+        font-size: 0.75em;
+    }
+
+        .navbar-default .navbar-brand:hover,
+        .navbar-default .navbar-brand:focus,
+        .navbar-default .navbar-brand:active,
+        .navbar-default .navbar-brand.active {
+            color: #337ab7;
+        }
+
+    .navbar-default .navbar-collapse {
+        border-color: rgba(255,255,255,.02);
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: #337ab7;
+        background-color: #337ab7;
+    }
+
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #fff;
+        }
+
+        .navbar-default .navbar-toggle:hover,
+        .navbar-default .navbar-toggle:focus {
+            background-color: #337ab7;
+        }
+
+    .navbar-default .nav li a {
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #fff;
+    }
+
+        .navbar-default .nav li a:hover,
+        .navbar-default .nav li a:focus {
+            outline: 0;
+            color: #337ab7;
+        }
+
+    .navbar-default .navbar-nav > .active > a {
+        border-radius: 0;
+        color: #fff;
+        background-color: #337ab7;
+    }
+
+        .navbar-default .navbar-nav > .active > a:hover,
+        .navbar-default .navbar-nav > .active > a:focus {
+            color: #fff;
+            background-color: #337ab7;
+        }
+
+ @media(min-width:270px) {
+
+    .navbar-default .navbar-brand {
+        font-size: 0.9em;
+    }
+    
+}
+ @media(min-width:280px) {
+
+    .navbar-default .navbar-brand {
+        font-size: 1em;
+    }
+    
+}
+@media(min-width:317px) {
+
+    .navbar-default .navbar-brand {
+        font-size: 1.2em;
+    }
+    
+}
+@media(min-width:375px) {
+
+    .navbar-default .navbar-brand {
+        font-size: 1.5em;
+    }
+    
+}
+
+@media(min-width:500px) {
+
+    .navbar-default .navbar-brand {
+        font-size: 1.8em;
+    }        
+}
+@media(min-width:768px) {
+    
+    .navbar-default {
+        padding: 10px 0;
+    }
+
+        .navbar-default .navbar-brand {
+            font-size: 2em;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            transition: all .3s;
+        }
+
+        .navbar-default .navbar-nav > .active > a {
+            border-radius: 3px;
+        }
+
+        .navbar-default.navbar-shrink {
+            padding: 10px 0;
+            background-color: #222;
+        }
+
+            .navbar-default.navbar-shrink .navbar-brand {
+                font-size: 1.5em;
+            }
+
+        .gallery
+        {
+            padding:100px 0 50px 0;
+        }
+
+        .carhistory
+        {
+            padding:100px 0 50px 0;
+        }
+
+        .video
+        {
+            padding:100px 0 50px 0;
+        }
+
+        .contact 
+        {
+            padding:100px 0 50px 0;
+        }
+
+
+        .about 
+        {
+            padding:100px 0 50px 0;
+        }
+}
+
+
+@media(min-width:992px)
+{
+    .gallery
+    {
+        padding:50px 0;
+    }
+
+    .carhistory
+    {
+        padding:50px 0;
+    }
+
+    .video
+    {
+        padding:50px 0;
+    }
+
+    .contact 
+    {
+        padding:50px 0;
+    }
+
+    .about 
+    {
+        padding:50px 0;
+    }
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+    .embed-container iframe, .embed-container object, .embed-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+.galleryDiv ul {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+    .galleryDiv ul li {
+        list-style: none;
+        margin-bottom: 25px;
+    }
+
+        .galleryDiv ul li img {
+            cursor: pointer;
+        }
+
+#myModal .modal-body {
+    padding: 5px !important;
+}
+
+#myModal .modal-content {
+    border-radius: 0;
+}
+
+#myModal .modal-dialog img {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#myModal .controls {
+    width: 50px;
+    display: block;
+    font-size: 11px;
+    padding-top: 8px;
+    font-weight: bold;
+}
+
+#myModal .next {
+    float: right;
+    text-align: right;
+}

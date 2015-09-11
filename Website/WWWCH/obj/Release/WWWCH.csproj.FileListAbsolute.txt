@@ -1,0 +1,5 @@
+C:\Temp\WWWCH\WWWCH\bin\WWWCH.dll.config
+C:\Temp\WWWCH\WWWCH\bin\WWWCH.dll
+C:\Temp\WWWCH\WWWCH\bin\WWWCH.pdb
+C:\Temp\WWWCH\WWWCH\obj\Release\WWWCH.dll
+C:\Temp\WWWCH\WWWCH\obj\Release\WWWCH.pdb
