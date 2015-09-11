@@ -67,8 +67,6 @@ $(function() {
 				
 				// (not necessary) preloading the images here...
 				$items.add('<img src="Images/ajax-loader.gif"/>').imagesLoaded( function() {
-					// add options
-					_addViewModes();
 					
 					// add large image wrapper
 					_addImageWrapper();
@@ -103,37 +101,6 @@ $(function() {
 				$esCarousel.elastislide( 'setCurrent', current );
 				
 			},
-			_addViewModes	= function() {
-				
-				// top right buttons: hide / show carousel
-				
-				var $viewfull	= $('<a href="#" class="rg-view-full"></a>'),
-					$viewthumbs	= $('<a href="#" class="rg-view-thumbs rg-view-selected"></a>');
-				
-				$rgGallery.prepend( $('<div class="rg-view"/>').append( $viewfull ).append( $viewthumbs ) );
-				
-				$viewfull.on('click.rgGallery', function( event ) {
-						if( mode === 'carousel' )
-							$esCarousel.elastislide( 'destroy' );
-						$esCarousel.hide();
-					$viewfull.addClass('rg-view-selected');
-					$viewthumbs.removeClass('rg-view-selected');
-					mode	= 'fullview';
-					return false;
-				});
-				
-				$viewthumbs.on('click.rgGallery', function( event ) {
-					_initCarousel();
-					$viewthumbs.addClass('rg-view-selected');
-					$viewfull.removeClass('rg-view-selected');
-					mode	= 'carousel';
-					return false;
-				});
-				
-				if( mode === 'fullview' )
-					$viewfull.trigger('click');
-					
-			},
 			_addImageWrapper= function() {
 				
 				// adds the structure for the large image and the navigation buttons (if total items > 1)
@@ -156,7 +123,7 @@ $(function() {
 						_navigate( 'right' );
 						return false;
 					});
-				
+                    				
 					// add touchwipe events on the large image wrapper
 					$imgWrapper.touchwipe({
 						wipeLeft			: function() {
@@ -178,7 +145,7 @@ $(function() {
 				}
 				
 			},
-			_navigate		= function( dir ) {
+			_navigate		= function ( dir ) {
 				
 				// navigate through the large images
 				
@@ -217,7 +184,7 @@ $(function() {
 				
 				$('<img/>').load( function() {
 					
-					$rgGallery.find('div.rg-image').empty().append('<img src="' + largesrc + '"/>');
+				    $rgGallery.find('div.rg-image').empty().append('<img src="' + largesrc + '"/>');
 					
 					if (actualTitle)
 					    $rgGallery.find('div.rg-title').show().children('p').empty().text(actualTitle);

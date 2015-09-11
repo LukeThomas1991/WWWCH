@@ -476,21 +476,21 @@ section#contact .text-danger {
         width: 100%;
         height: 100%;
     }
-
+    
 .galleryDiv ul {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
 }
+        
+.galleryDiv ul li {
+    list-style: none;
+    max-height: 65px;
+}
 
-    .galleryDiv ul li {
-        list-style: none;
-        margin-bottom: 25px;
-    }
-
-        .galleryDiv ul li img {
-            cursor: pointer;
-        }
-
+.galleryDiv ul li img {
+    cursor: pointer;
+}
+        
 #myModal .modal-body {
     padding: 5px !important;
 }
