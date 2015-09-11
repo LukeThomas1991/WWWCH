@@ -516,3 +516,9 @@ section#contact .text-danger {
     float: right;
     text-align: right;
 }
+
+.error
+{
+    padding-top:100px;
+    padding-bottom:100px;
+}
