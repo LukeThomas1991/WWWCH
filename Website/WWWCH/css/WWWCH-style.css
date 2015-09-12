@@ -55,7 +55,7 @@ body {
         color: #333;
         background-color: rgba(255,255,255,0.8);
     }
-    
+
 /* Custom Horizontal Rule */
 
 hr.small {
@@ -186,10 +186,9 @@ hr.large {
     padding: 50px 0;
 }
 
-.viewing a {
-    color: lightgray;
-}
-
+    .viewing a {
+        color: lightgray;
+    }
 
 /* Gallery */
 
@@ -224,7 +223,7 @@ hr.large {
 /* Footer */
 
 footer {
-    background-color:lightgray;
+    background-color: lightgray;
     padding: 70px 0;
 }
 
@@ -344,43 +343,37 @@ section#contact .text-danger {
             background-color: #337ab7;
         }
 
- @media(min-width:270px) {
-
+@media(min-width:270px) {
     .navbar-default .navbar-brand {
         font-size: 0.9em;
     }
-    
 }
- @media(min-width:280px) {
 
+@media(min-width:280px) {
     .navbar-default .navbar-brand {
         font-size: 1em;
     }
-    
 }
-@media(min-width:317px) {
 
+@media(min-width:317px) {
     .navbar-default .navbar-brand {
         font-size: 1.2em;
     }
-    
 }
-@media(min-width:375px) {
 
+@media(min-width:375px) {
     .navbar-default .navbar-brand {
         font-size: 1.5em;
     }
-    
 }
 
 @media(min-width:500px) {
-
     .navbar-default .navbar-brand {
         font-size: 1.8em;
-    }        
+    }
 }
+
 @media(min-width:768px) {
-    
     .navbar-default {
         padding: 10px 0;
     }
@@ -404,60 +397,27 @@ section#contact .text-danger {
             .navbar-default.navbar-shrink .navbar-brand {
                 font-size: 1.5em;
             }
-
-        .gallery
-        {
-            padding:100px 0 50px 0;
-        }
-
-        .carhistory
-        {
-            padding:100px 0 50px 0;
-        }
-
-        .video
-        {
-            padding:100px 0 50px 0;
-        }
-
-        .contact 
-        {
-            padding:100px 0 50px 0;
-        }
-
-
-        .about 
-        {
-            padding:100px 0 50px 0;
-        }
 }
 
-
-@media(min-width:992px)
-{
-    .gallery
-    {
-        padding:50px 0;
+@media(min-width:992px) {
+    .gallery {
+        padding: 50px 0;
     }
 
-    .carhistory
-    {
-        padding:50px 0;
+    .carhistory {
+        padding: 50px 0;
     }
 
-    .video
-    {
-        padding:50px 0;
+    .video {
+        padding: 50px 0;
     }
 
-    .contact 
-    {
-        padding:50px 0;
+    .contact {
+        padding: 50px 0;
     }
 
-    .about 
-    {
-        padding:50px 0;
+    .about {
+        padding: 50px 0;
     }
 }
 
@@ -476,21 +436,21 @@ section#contact .text-danger {
         width: 100%;
         height: 100%;
     }
-    
+
 .galleryDiv ul {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
 }
-        
-.galleryDiv ul li {
-    list-style: none;
-    max-height: 65px;
-}
 
-.galleryDiv ul li img {
-    cursor: pointer;
-}
-        
+    .galleryDiv ul li {
+        list-style: none;
+        max-height: 65px;
+    }
+
+        .galleryDiv ul li img {
+            cursor: pointer;
+        }
+
 #myModal .modal-body {
     padding: 5px !important;
 }
@@ -517,8 +477,47 @@ section#contact .text-danger {
     text-align: right;
 }
 
-.error
+.errorPageSection {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+body {
+    top: 0px !important;
+}
+
+@media (min-width: 768px) and (max-width:992px) /* @grid-float-breakpoint -1 */
 {
-    padding-top:100px;
-    padding-bottom:100px;
+    .navbar-fixed-top {
+        position: relative;
+        top: auto;
+    }
+
+    .navbar {
+        margin-bottom: 0;
+    }
+
+    .gallery {
+        padding: 0 0 50px 0;
+    }
+
+    .carhistory {
+        padding: 0 0 50px 0;
+    }
+
+    .video {
+        padding: 0 0 50px 0;
+    }
+
+    .contact {
+        padding: 0 0 50px 0;
+    }
+
+    .about {
+        padding: 0 0 50px 0;
+    }
 }
