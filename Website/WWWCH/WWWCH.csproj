@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -57,13 +58,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="400.shtml" />
-    <None Include="401.shtml" />
-    <None Include="403.shtml" />
-    <None Include="404.shtml" />
-    <None Include="405.shtml" />
-    <None Include="406.shtml" />
-    <None Include="500.shtml" />
+    <Content Include="400.html" />
+    <Content Include="401.html" />
+    <Content Include="403.html" />
+    <Content Include="404.html" />
+    <Content Include="405.html" />
+    <Content Include="406.html" />
+    <Content Include="500.html" />
     <Content Include="CarHistory.html" />
     <Content Include="Contact.html" />
     <Content Include="css\elastislide.css" />
@@ -93,7 +94,7 @@
     <Content Include="Images\RollsRoyceSeat.jpg" />
     <Content Include="Images\RollsRoyceSide.jpg" />
     <Content Include="Images\views.png" />
-    <Content Include="Default.html" />
+    <Content Include="index.html" />
     <Content Include="js\contact_me.js" />
     <Content Include="js\gallery.js" />
     <Content Include="js\jqBootstrapValidation.js" />
