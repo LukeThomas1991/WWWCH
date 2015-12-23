@@ -17,6 +17,13 @@ $('.navbar-collapse ul li a').click(function () {
     $('.navbar-toggle:visible').click();
 });
 
+$('#spanYearsRunning').init(function () {
+    var start = new Date(2005, 1, 1).getFullYear();
+    var now = new Date().getFullYear();
+    var year = now - start;
+    $('#spanYearsRunning').text(year);
+});
+
 // Video
 $(function () {
     var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com'], object, embed"),
