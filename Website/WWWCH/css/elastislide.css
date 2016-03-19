@@ -47,6 +47,7 @@
             .es-carousel ul li a img {
                 border: none;
                 max-height: 48.75px;
+                max-width: 100%;
             }
 
 .es-nav span {
