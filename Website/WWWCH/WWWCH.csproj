@@ -89,8 +89,8 @@
     <Content Include="Images\RollsRoyceFrontSeat.jpg" />
     <Content Include="Images\RollsRoyceGrillAngel.jpg" />
     <Content Include="Images\RollsRoyceHill.jpg" />
-    <Content Include="Images\RollsRoyceMwntChurch.JPG" />
-    <Content Include="Images\RollsRoyceNationalLibraryOfWales.JPG" />
+    <Content Include="Images\RollsRoyceMwntChurch.jpg" />
+    <Content Include="Images\RollsRoyceNationalLibraryOfWales.jpg" />
     <Content Include="Images\RollsRoycePic.jpg" />
     <Content Include="Images\RollsRoyceRibon.jpg" />
     <Content Include="Images\RollsRoyceSeat.jpg" />
@@ -125,8 +125,8 @@
     <Content Include="Thumbnails\RollsRoyceFrontSeat.jpg" />
     <Content Include="Thumbnails\RollsRoyceGrillAngel.jpg" />
     <Content Include="Thumbnails\RollsRoyceHill.jpg" />
-    <Content Include="Thumbnails\RollsRoyceMwntChurch.JPG" />
-    <Content Include="Thumbnails\RollsRoyceNationalLibraryOfWales.JPG" />
+    <Content Include="Thumbnails\RollsRoyceMwntChurch.jpg" />
+    <Content Include="Thumbnails\RollsRoyceNationalLibraryOfWales.jpg" />
     <Content Include="Thumbnails\RollsRoycePic.jpg" />
     <Content Include="Thumbnails\RollsRoyceRibon.jpg" />
     <Content Include="Thumbnails\RollsRoyceSeat.jpg" />
