@@ -3,3 +3,9 @@ C:\Temp\WWWCH\WWWCH\bin\WWWCH.dll
 C:\Temp\WWWCH\WWWCH\bin\WWWCH.pdb
 C:\Temp\WWWCH\WWWCH\obj\Release\WWWCH.dll
 C:\Temp\WWWCH\WWWCH\obj\Release\WWWCH.pdb
+C:\Users\Admin\Documents\GitHub\WWWCH\Website\WWWCH\bin\WWWCH.dll.config
+C:\Users\Admin\Documents\GitHub\WWWCH\Website\WWWCH\bin\WWWCH.dll
+C:\Users\Admin\Documents\GitHub\WWWCH\Website\WWWCH\bin\WWWCH.pdb
+C:\Users\Admin\Documents\GitHub\WWWCH\Website\WWWCH\obj\Release\WWWCH.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\WWWCH\Website\WWWCH\obj\Release\WWWCH.dll
+C:\Users\Admin\Documents\GitHub\WWWCH\Website\WWWCH\obj\Release\WWWCH.pdb

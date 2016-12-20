@@ -139,6 +139,7 @@
     <Content Include="Thumbnails\RollsRoyceSide.jpg" />
     <Content Include="Video.html" />
     <Content Include="web.config" />
+    <None Include="Properties\PublishProfiles\WWWCH.pubxml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
