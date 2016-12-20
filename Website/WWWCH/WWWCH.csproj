@@ -112,6 +112,8 @@
     <Content Include="mail\contact_me.php" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="sitemap-com.xml" />
+    <Content Include="sitemap.xml" />
     <Content Include="SitemapView.html" />
     <Content Include="Thumbnails\historyFlyingLady.jpg" />
     <Content Include="Thumbnails\historyRollsRoyce.jpg" />
