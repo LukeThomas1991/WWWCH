@@ -1,4 +1,18 @@
-﻿// WOW
+﻿function getDomain()
+{
+    var domainExt = '.co.uk'
+    var domainList = ['com'];
+    var tokens = document.domain.split('.');
+    while (tokens.length) {
+        var token = tokens.pop();
+        if (domainList.indexOf(token) != -1) {
+            return '.' + token;
+        }
+    }
+    return domainExt;
+}
+
+// WOW
 new WOW().init();
 
 // Page scroll
@@ -46,4 +60,15 @@ $(function () {
                 .height(newWidth * $el.attr('data-aspectRatio'));
         });
     }).resize();
+});
+
+
+$('#copyrightSection').init(function () {
+    var now = new Date().getFullYear();
+    var domainExt = getDomain();
+    $('#copyrightSection').text("Copyright © www.westwalesweddingcarhire" + domainExt + " " + now);
+});
+
+$('#spanDomainExtension').init(function () {
+    $('#spanDomainExtension').text(getDomain());
 });
