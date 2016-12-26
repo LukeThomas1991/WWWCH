@@ -70,89 +70,12 @@ hr.large {
     max-width: 300px;
 }
 
-/* Side Menu */
-
-#sidebar-wrapper {
-    z-index: 1000;
-    position: fixed;
-    right: 0;
-    width: 250px;
-    height: 100%;
-    margin-right: -250px;
-    overflow-y: auto;
-    background: #222;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
-
-.sidebar-nav {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-    .sidebar-nav li {
-        text-indent: 20px;
-        line-height: 40px;
-    }
-
-        .sidebar-nav li a {
-            display: block;
-            text-decoration: none;
-            color: #999;
-        }
-
-            .sidebar-nav li a:hover {
-                text-decoration: none;
-                color: #fff;
-                background: rgba(255,255,255,0.2);
-            }
-
-            .sidebar-nav li a:active,
-            .sidebar-nav li a:focus {
-                text-decoration: none;
-            }
-
-    .sidebar-nav > .sidebar-brand {
-        height: 55px;
-        font-size: 18px;
-        line-height: 55px;
-    }
-
-        .sidebar-nav > .sidebar-brand a {
-            color: #999;
-        }
-
-            .sidebar-nav > .sidebar-brand a:hover {
-                color: #fff;
-                background: none;
-            }
-
+/* Menu */
 #menu-toggle {
     z-index: 1;
     position: fixed;
     top: 0;
     right: 0;
-}
-
-#sidebar-wrapper.active {
-    right: 250px;
-    width: 250px;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
-
-.toggle {
-    margin: 5px 5px 0 0;
 }
 
 /* Header */
@@ -187,6 +110,7 @@ hr.large {
 
     .viewing a {
         color: lightgray;
+        text-decoration:underline;
     }
 
 /* Gallery */
@@ -250,28 +174,28 @@ section#contact .form-control:focus {
 
 section#contact::-webkit-input-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact:-moz-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact::-moz-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact:-ms-input-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
@@ -286,7 +210,7 @@ section#contact .text-danger {
 }
 
     .navbar-default .navbar-brand {
-        font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+        font-family: "Kaushan Script","Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
         color: #fff;
         font-size: 0.75em;
     }
@@ -295,30 +219,30 @@ section#contact .text-danger {
         .navbar-default .navbar-brand:focus,
         .navbar-default .navbar-brand:active,
         .navbar-default .navbar-brand.active {
-            color: #337ab7;
+            background-color: transparent;
+        }
+
+        .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+            background-color: transparent;
         }
 
     .navbar-default .navbar-collapse {
         border-color: rgba(255,255,255,.02);
     }
-
-    .navbar-default .navbar-toggle {
-        border-color: #337ab7;
-        background-color: #337ab7;
-    }
-
         .navbar-default .navbar-toggle .icon-bar {
             background-color: #fff;
         }
 
-        .navbar-default .navbar-toggle:hover,
-        .navbar-default .navbar-toggle:focus {
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+        }
+
+        .navbar-default .navbar-toggle:hover {
             background-color: #337ab7;
         }
 
     .navbar-default .nav li a {
-        text-transform: uppercase;
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
         font-weight: 400;
         letter-spacing: 1px;
         color: #fff;
@@ -449,33 +373,6 @@ section#contact .text-danger {
         .galleryDiv ul li img {
             cursor: pointer;
         }
-
-#myModal .modal-body {
-    padding: 5px !important;
-}
-
-#myModal .modal-content {
-    border-radius: 0;
-}
-
-#myModal .modal-dialog img {
-    text-align: center;
-    margin: 0 auto;
-}
-
-#myModal .controls {
-    width: 50px;
-    display: block;
-    font-size: 11px;
-    padding-top: 8px;
-    font-weight: bold;
-}
-
-#myModal .next {
-    float: right;
-    text-align: right;
-}
-
 .errorPageSection {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -489,7 +386,7 @@ body {
     top: 0px !important;
 }
 
-@media (min-width: 768px) and (max-width:992px) /* @grid-float-breakpoint -1 */
+@media (min-width: 768px) and (max-width:992px)
 {
     .navbar-fixed-top {
         position: relative;

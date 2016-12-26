@@ -69,6 +69,7 @@
     <Content Include="Contact.html" />
     <Content Include="css\elastislide.css" />
     <Content Include="css\gallery-style.css" />
+    <Content Include="css\hamburger.css" />
     <Content Include="css\WWWCH-style.css" />
     <Content Include="Gallery.html" />
     <Content Include="Images\ajax-loader.gif" />

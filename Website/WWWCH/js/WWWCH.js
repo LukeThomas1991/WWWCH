@@ -12,9 +12,6 @@
     return domainExt;
 }
 
-// WOW
-new WOW().init();
-
 // Page scroll
 
 $(function () {
@@ -27,15 +24,20 @@ $(function () {
     });
 });
 // Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function () {
+/*$('.navbar-collapse ul li a').click(function () {
     $('.navbar-toggle:visible').click();
-});
+});*/
 
 $('#spanYearsRunning').init(function () {
     var start = new Date(2005, 1, 1).getFullYear();
     var now = new Date().getFullYear();
     var year = now - start;
     $('#spanYearsRunning').text(year);
+});
+
+$(".hamburger").on("click", function (e) {
+    $(".hamburger").toggleClass("is-active");
+    $('.navbar-toggle:visible').click();
 });
 
 // Video
