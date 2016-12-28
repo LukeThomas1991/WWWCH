@@ -35,8 +35,8 @@ $('#spanYearsRunning').init(function () {
     $('#spanYearsRunning').text(year);
 });
 
-$(".hamburger").on("click", function (e) {
-    $(".hamburger").toggleClass("is-active");
+$(".c-hamburger").on("click", function (e) {
+    $(".c-hamburger").toggleClass("is-active");
     $('.navbar-toggle:visible').click();
 });
 
